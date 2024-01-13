@@ -6,7 +6,8 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
-.btn-common{
+
+.btn-common {
     padding: 1rem 1.1rem;
     border: 0;
     background-color: #FF900E;
@@ -16,97 +17,142 @@
     font-weight: 600;
     cursor: pointer;
 }
-.gray-text{
+
+.gray-text {
     color: #727272;
     font-weight: 500;
 }
-.orange-text{
+
+.orange-text {
     color: #FF900E;
 }
-.common-p-text{
+
+.common-p-text {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
     margin: 1.2rem 0rem;
 }
 
-/* ____________________________________________Header */
-header{
-    padding: 20px 240px;
-    background-color: rgba(255, 143, 14, 0.164);
-    /* border: 2px solid black; */
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav_title{
+.h1-titles {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
 }
-nav>ul{
+
+/* ____________________________________________Header */
+header {
+    padding: 20px 240px;
+    background-color: rgba(255, 143, 14, 0.164);
+    /* border: 2px solid black; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
     display: flex;
     list-style: none;
 }
-nav li{
+
+nav li {
     margin-right: 1.2rem;
 }
-li a{
+
+li a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
 }
+
 /* ____________________________________Header-Banner */
-.banner{
+.banner {
     /* border: 2px solid black; */
     text-align: center;
 }
-.banner-content{
+
+.banner-content {
     /* border: 2px solid black; */
     margin: 20px auto;
     max-width: 50rem;
     margin-bottom: 4rem;
 }
-.banner-title{
+
+.banner-title {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }
 
 /* _______________________________Main */
-main{
+main {
     max-width: 0rem 118rem;
     margin: 4rem auto;
 }
+
 /* ___________________________Features List Styles */
-.features-list{
+.features-list {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0rem 2rem;
 }
-.features-list-img{
+
+.features-list-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
-.features-content{
+
+.features-content {
     max-width: 35rem;
     padding: 3rem 3rem;
 }
-.features-list-title{
+
+.features-list-title {
     font-size: 3rem;
     color: #131313;
     font-weight: 700;
 }
 
-
-
+/* __________________________________Facts Section */
+.facts{
+    /* border: 2px solid black; */
+    padding: 0rem 2rem;
+    margin: 4rem 0rem;
+    text-align: center;
+}
+.facts-title{
+    margin-bottom: 1rem;
+}
+.facts-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-cards .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 2.3rem ;
+}
+.facts-cards .card-stats{
+    margin: 0.8rem 0rem ;
+    font-size: 2.8rem;
+    color: #424242;
+    font-weight: 600;
+}
+.facts-cards .card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #727272;
+}
 
 
 
@@ -133,35 +179,49 @@ main{
 /*__________________________Responsive Media Queries */
 /* Small Devices */
 @media screen and (max-width: 576px) {
-    header{
+    .facts-cards, header {
         padding: 1.5rem;
     }
-    nav{
+
+    .facts-cards, nav {
         flex-direction: column;
     }
-    .features-list{
+
+    .features-list {
         flex-direction: column-reverse;
     }
-    .features-list-img{
+
+    .features-list-img {
         grid-template-columns: repeat(1, 1fr);
     }
-    .features-content{
+
+    .features-content {
         text-align: center;
+    }
+    .facts-cards{
+        gap: 1.2rem;
     }
 }
 
 /* Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header{
+    .facts-cards, header {
         padding: 2rem;
     }
-    nav{
+    nav {
         flex-direction: column;
     }
-    .features-list{
+    .features-list-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .features-list {
         flex-direction: column-reverse;
     }
-    
+    .facts-cards{
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
 }
-
-
