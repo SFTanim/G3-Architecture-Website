@@ -16,6 +16,19 @@
     font-weight: 600;
     cursor: pointer;
 }
+.gray-text{
+    color: #727272;
+    font-weight: 500;
+}
+.orange-text{
+    color: #FF900E;
+}
+.common-p-text{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.2rem 0rem;
+}
 
 /* ____________________________________________Header */
 header{
@@ -61,15 +74,49 @@ li a{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-des{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #727272;
-    margin-bottom: 2rem;
-}
 .banner img{
     width: 100%;
 }
+
+/* _______________________________Main */
+main{
+    max-width: 0rem 118rem;
+    margin: 4rem auto;
+}
+/* ___________________________Features List Styles */
+.features-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+.features-list-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.features-content{
+    max-width: 35rem;
+    padding: 3rem 3rem;
+}
+.features-list-title{
+    font-size: 3rem;
+    color: #131313;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -92,6 +139,15 @@ li a{
     nav{
         flex-direction: column;
     }
+    .features-list{
+        flex-direction: column-reverse;
+    }
+    .features-list-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-content{
+        text-align: center;
+    }
 }
 
 /* Medium Devices */
@@ -102,6 +158,10 @@ li a{
     nav{
         flex-direction: column;
     }
+    .features-list{
+        flex-direction: column-reverse;
+    }
+    
 }
 
 
