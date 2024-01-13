@@ -230,6 +230,21 @@ main {
     margin-top: 2rem;
 }
 
+/* ______________________________________________Footer Section */
+.footer {
+    padding: 1rem 0rem;
+    margin: 3rem 10rem;
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.footer-text {
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 
@@ -291,6 +306,10 @@ main {
     .facts-cards {
         gap: 1.2rem;
     }
+    .footer {
+        padding: 1rem 0rem;
+        margin: 3rem 0rem;
+    }
 
 }
 
@@ -317,7 +336,7 @@ main {
         margin-left: 0;
     }
 
-    
+
     .features-list-img {
         display: flex;
         flex-wrap: wrap;
@@ -332,6 +351,10 @@ main {
     .facts-cards {
         flex-wrap: wrap;
         gap: 1.2rem;
+    }
+    .footer {
+        padding: 1rem 0rem;
+        margin: 3rem 0;
     }
 
 }
